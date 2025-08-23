@@ -25,10 +25,9 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
 
 # Initialize extensions
 db = SQLAlchemy(app)
-CORS(app, origins=['https://main.d3gmgghro6rsjs.amplifyapp.com/'])
-
-# AWS S3 Configuration
-s3_client = boto3.client(
+CORS(app, origins=['https://main.d3gmgghro6rsjs.amplifyapp.com'])
+o6rsjs.amplifyapp.com/'])
+lient = boto3.client(
     's3',
     aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),
     aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY'),
